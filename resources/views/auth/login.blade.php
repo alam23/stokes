@@ -20,7 +20,7 @@
                                     <span class="input-group-text"><i class="ni ni-email-83"></i></span>
                                 </div>
                                 <input id="email" name="email" class="form-control{{ $errors->has('email') ? ' is-invalid' : '' }}" 
-                                value="{{ old('email') }}" placeholder="Email" type="email" required autofocus>
+                                value="{{ old('email') }}" placeholder="Correo" type="email" required autofocus><!--placeholder=Email-->
                             </div>
                         </div>
                         <div class="form-group">
@@ -28,7 +28,7 @@
                                 <div class="input-group-prepend">
                                     <span class="input-group-text"><i class="ni ni-lock-circle-open"></i></span>
                                 </div>
-                                <input id="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" placeholder="Password" type="password" required>
+                                <input id="password" class="form-control{{ $errors->has('password') ? ' is-invalid' : '' }}" name="password" placeholder="Contraseña" type="password" required><!--placeholder=Password-->
                             </div>
                         </div>
                         <div class="custom-control custom-control-alternative custom-checkbox">
@@ -39,7 +39,7 @@
                             </label>
                         </div>
                         <div class="text-center">
-                            <button type="submit" class="btn btn-primary my-4">Sign in</button>
+                            <button type="submit" class="btn btn-primary my-4">Ingresar</button><!--sig IN-->
                         </div>
                     </form>
                 </div>
