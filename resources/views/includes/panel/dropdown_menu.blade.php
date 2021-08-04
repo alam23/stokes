@@ -2,7 +2,7 @@
     <div class=" dropdown-header noti-title">
         <h6 class="text-overflow m-0">Bienvenido!</h6>
     </div>
-    <a href="./examples/profile.html" class="dropdown-item">
+    <a href="{{ url('/profile') }}" class="dropdown-item">
         <i class="ni ni-single-02 text-orange"></i>
         <span>Mi Perfil</span>
     
