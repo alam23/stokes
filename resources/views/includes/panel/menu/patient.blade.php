@@ -8,10 +8,10 @@
       
   <i class="ni ni-calendar-grid-58 text-orange" aria-expanded="false"></i> Mis Citas
     </a>
-  <a class="nav-link" href="#">
+  <a class="nav-link" href="{{ url('/profile') }}">
   <i class="fas fa-user text-orange"></i> Mi Perfil
   </a>
-  <a class="nav-link " href="#">
+  <a class="nav-link " href="{{ url('/insurance') }}">
   <i class="fas fa-heartbeat text-orange" ></i> Seguro Médico
   </a>
 </li>
