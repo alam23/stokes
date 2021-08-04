@@ -35,11 +35,11 @@ return [
     'date_equals' => 'The :attribute must be a date equal to :date.',
     'date_format' => 'The :attribute does not match the format :format.',
     'different' => 'The :attribute and :other must be different.',
-    'digits' => 'The :attribute must be :digits digits.',
+    'digits' => 'El :attribute debe tener :digits dígitos.',/*The :attribute must be :digits digits.*/
     'digits_between' => 'The :attribute must be between :min and :max digits.',
     'dimensions' => 'The :attribute has invalid image dimensions.',
     'distinct' => 'The :attribute field has a duplicate value.',
-    'email' => 'The :attribute must be a valid email address.',
+    'email' => ':attribute electrónico no es válido.',/*The :attribute must be a valid email address.*/
     'exists' => 'The selected :attribute is invalid.',
     'file' => 'The :attribute must be a file.',
     'filled' => 'The :attribute field must have a value.',
@@ -86,7 +86,7 @@ return [
     'min' => [
         'numeric' => 'The :attribute must be at least :min.',
         'file' => 'The :attribute must be at least :min kilobytes.',
-        'string' => 'The :attribute must be at least :min characters.',
+        'string' => ':attribute debe tener como minimo :min caracteres.',//'The :attribute must be at least :min characters.'
         'array' => 'The :attribute must have at least :min items.',
     ],
     'not_in' => 'The selected :attribute is invalid.',
@@ -144,6 +144,12 @@ return [
     |
     */
 
-    'attributes' => [],
+    /*'attributes' => [],*/
+    'attributes' => array(
+        'phone' => 'Teléfono',
+        'email' => 'Correo',
+        'address' => 'Dirección',
+        'name' => 'Nombre'// if it's a relation
+    ),
 
 ];
