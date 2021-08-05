@@ -13,36 +13,21 @@
   </div>
   <div class="table-responsive">
     <!-- Projects table -->
-    <table class="table align-items-center table-flush">
-      <thead class="thead-light">
-        <tr>
-          <th scope="col">Nombre</th>
-          <th scope="col">E-mail</th>
-          <th scope="col">DPI</th>
-          <th scope="col">Opciones</th>
-        </tr>
-      </thead>
-      <tbody>
-        <tr>
-          <th scope="row">
-            {{ $patient->name }}
-          </th>
-          <td>
-            {{ $patient->email }}
-          </td>
-          <td>
-            {{ $patient->dpi }}
-          </td>
-          <td>
-            <form action="{{ url('profile/edit')}}" method="POST">
+
+
+    <ul class="list-group">
+    <h4  class="fas fa-user" >&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Nombre del Usuario:</h4>
+    <li class="list-group-item">{{ $patient->name }}</li><br/>
+    <h4 <i class="fas fa-envelope"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Correo Electrónico:</h4><br/>
+    <li class="list-group-item">{{ $patient->email }}</li><br/>
+    <h4 <i class="fas fa-address-book"></i>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;DPI:</h4><br/>
+    <li class="list-group-item">{{ $patient->dpi }}</li><br/>
+   <form action="{{ url('profile/edit')}}" method="POST" align="center">
               @csrf
               @method('DELETE')
-              <a href="{{ url('profile/edit')}}" class="btn btn-sm btn-primary">Editar</a>
+              <a href="{{ url('profile/edit')}}" class="btn btn-sm btn-primary" >Editar</a>
             </form>
-          </td>
-        </tr>
-      </tbody>
-    </table>
+</ul>
   </div>
 </div>
 @endsection
