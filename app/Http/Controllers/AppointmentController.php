@@ -136,7 +136,7 @@ class AppointmentController extends Controller
         $data['scheduled_time'] = $carbonTime->format('H:i:s');
         Appointment::create($data);
         
-        $notification = 'El registro ha sido guardado correctamente';
+        $notification = 'La cita ha sido guardado correctamente';
         return back()->with(compact('notification'));
     }
 

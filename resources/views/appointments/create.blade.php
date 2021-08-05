@@ -7,6 +7,13 @@
       <a href="{{ url('patients')}}" class="btn btn-sm btn-primary">Cancelar y volver</a>
     </div>
   </div>
+  <div class="card-body">
+    @if (session('notification'))
+      <div class="alert alert-success" role="alert">
+        {{session('notification')}}
+      </div>  
+    @endif
+  </div>
   <div class="table-responsive">
     <!-- Projects table -->
     <div class="card-body">
@@ -92,7 +99,7 @@
           </div>
         </div>
         <div class="form-group">
-          <label for="type">Tipo de consulta</label>
+          <label for="type">Tipo de cita</label>
           <div class="custom-control custom-radio mb-3">
             <input class="custom-control-input" type="radio" value="Presencial" name="type" id="type1"
             @if (old('type', 'Presencial') == 'Presencial')

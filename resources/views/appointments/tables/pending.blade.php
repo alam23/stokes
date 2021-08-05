@@ -63,6 +63,9 @@
                             <i class="ni ni-fat-delete"></i>
                         </button>
                     </form>
+                    @if($appointment->type == 'Virtual')
+                    <a href="https://meet.google.com/acd-fbqy-gkd" class="btn btn-sm btn-success" target="_blank">Enlace</a>
+                    @endif
                 @endif
             </td>
             @endforeach
