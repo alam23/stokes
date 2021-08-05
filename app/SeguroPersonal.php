@@ -8,6 +8,7 @@ class SeguroPersonal extends Model
 {
     protected $fillable = [
         'user_id',
+        'tipo',
         'fecha_pago',
         'monto_pago',
         'familia_id'
