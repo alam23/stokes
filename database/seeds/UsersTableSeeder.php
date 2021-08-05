@@ -131,6 +131,15 @@ class UsersTableSeeder extends Seeder
             'password' => bcrypt('password'), // secret
             'role' => "patient"
         ]);
+
+        User::create([
+            'name' => "Rossi Ravichagua",
+            'email' => "rossrav@siho.com",
+            'address'=> "Asociación de vivienda Chillón Etapa 3 Manzana Ñ Lote 9",
+            'phone' =>"996439166",
+            'password' => bcrypt('password'), // secret
+            'role' => "patient"
+        ]);
     }
 
 }

@@ -1,3 +1,4 @@
+<p>Espere la confirmación del médico</p>
 <div class="table-responsive">
     <table class="table align-items-center table-flush">
         <thead class="thead-light">
