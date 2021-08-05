@@ -47,7 +47,8 @@ Route::middleware('auth')->group(function (){
     Route::get('/profile','PerfilController@index');
     Route::get('/profile/edit','PerfilController@edit');
     Route::put('/profile','PerfilController@update');
-    Route::get('/emergencia','EmergenciaController@index');   
+    Route::get('/emergencia','EmergenciaController@index');
+    Route::put('/profile','EmergenciaController@update'); 
     Route::get('/insurance','InsuranceController@index');
     Route::get('/insurance/family','InsuranceController@fview');
     Route::get('/appointments/create', 'AppointmentController@create'); //
