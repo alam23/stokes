@@ -34,6 +34,11 @@ class User extends Authenticatable
         return $this->belongsToMany(Specialty::class)->withTimeStamps();
     }
 
+    public function seguropersonal(){
+        
+        return $this->hasOne(SeguroPersonal::class);
+    }
+
     public function scopePatients($query)
     {
         return $query->where('role', 'patient');
