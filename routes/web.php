@@ -44,7 +44,8 @@ Route::middleware(['auth', 'doctor'])->namespace('Doctor')->group(function(){
 });
 
 Route::middleware('auth')->group(function (){
-
+    Route::get('/insurance','InsuranceController@index');
+    Route::get('/insurance/family','InsuranceController@fview');
     Route::get('/appointments/create', 'AppointmentController@create'); //
     Route::post('/appointments', 'AppointmentController@store');//
 
