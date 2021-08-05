@@ -171,11 +171,11 @@ class WorkDaysTableSeeder extends Seeder
         for($i=0; $i<7; ++$i){
             WorkDay::create([
                 'day' => $i,
-                'active' => ($i==6),
-                'morning_start' => ($i == 6 ? '06:00:00' : '05:00:00'),
-                'morning_end' => ($i == 6 ? '08:30:00' : '05:00:00'),
-                'afternoon_start' => ($i == 6 ? '13:00:00' : '13:00:00'),
-                'afternoon_end' => ($i == 6 ? '15:00:00' : '13:00:00'),
+                'active' => ($i==1),
+                'morning_start' => ($i == 1 ? '06:00:00' : '05:00:00'),
+                'morning_end' => ($i == 1 ? '08:30:00' : '05:00:00'),
+                'afternoon_start' => ($i == 1 ? '13:00:00' : '13:00:00'),
+                'afternoon_end' => ($i == 1 ? '15:00:00' : '13:00:00'),
                 'user_id' => 16 //Medico (UsersTableSeeder)
             ]);
         }
@@ -184,10 +184,10 @@ class WorkDaysTableSeeder extends Seeder
             WorkDay::create([
                 'day' => $i,
                 'active' => ($i==6),
-                'morning_start' => ($i == 6 ? '08:30:00' : '05:00:00'),
-                'morning_end' => ($i == 6 ? '11:30:00' : '05:00:00'),
-                'afternoon_start' => ($i == 6 ? '15:00:00' : '13:00:00'),
-                'afternoon_end' => ($i == 6 ? '17:30:00' : '13:00:00'),
+                'morning_start' => ($i == 0 ? '08:30:00' : '05:00:00'),
+                'morning_end' => ($i == 0 ? '11:30:00' : '05:00:00'),
+                'afternoon_start' => ($i == 0 ? '15:00:00' : '13:00:00'),
+                'afternoon_end' => ($i == 0 ? '17:30:00' : '13:00:00'),
                 'user_id' => 15 //Medico (UsersTableSeeder)
             ]);
         }

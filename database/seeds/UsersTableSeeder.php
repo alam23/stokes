@@ -131,8 +131,6 @@ class UsersTableSeeder extends Seeder
             'password' => bcrypt('password'), // secret
             'role' => "patient"
         ]);
-
-        factory(User::class, 50)->states('patient')->create();
     }
 
 }

@@ -94,25 +94,18 @@
         <div class="form-group">
           <label for="type">Tipo de consulta</label>
           <div class="custom-control custom-radio mb-3">
-            <input class="custom-control-input" type="radio" value="Consulta" name="type" id="type1"
-            @if (old('type', 'Consulta') == 'Consulta')
+            <input class="custom-control-input" type="radio" value="Presencial" name="type" id="type1"
+            @if (old('type', 'Presencial') == 'Presencial')
             checked
             @endif>
-            <label class="custom-control-label" for="type1">Consulta</label>
+            <label class="custom-control-label" for="type1">Presencial</label>
           </div>
           <div class="custom-control custom-radio mb-3">
             <input class="custom-control-input" type="radio" name="type" id="type2"
-            @if (old('type') == 'Examen')
+            @if (old('type') == 'Virtual')
               checked
-            @endif value="Operacion">
-            <label class="custom-control-label" for="type2">Examen</label>
-          </div>
-          <div class="custom-control custom-radio mb-3">
-            <input class="custom-control-input" type="radio" name="type" id="type3"
-            @if (old('type') == 'Operacion')
-              checked
-            @endif value="Examen">
-            <label class="custom-control-label" for="type3">Operacion</label>
+            @endif value="Virtual">
+            <label class="custom-control-label" for="type2">Virtual</label>
           </div>
         </div>
         <div class="form-group">
@@ -139,4 +132,5 @@
     titleFormat: "MM yyyy", /* Leverages same syntax as 'format' */
     weekStart: 0
 };
+</script>
 @endsection
