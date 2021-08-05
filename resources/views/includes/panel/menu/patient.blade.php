@@ -14,4 +14,7 @@
   <a class="nav-link " href="{{ url('/insurance') }}">
   <i class="fas fa-heartbeat text-orange" ></i> Seguro Médico
   </a>
+  <a class="nav-link " href="{{ url('/emergencia') }}">
+  <i class="fas fa-heartbeat text-orange" ></i> Emergencias
+  </a>
 </li>
