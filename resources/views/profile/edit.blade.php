@@ -36,10 +36,6 @@
             <input type="text" name="email" class="form-control"  value="{{old('email', $patient->email)}}" required>
         </div>
         <div class="form-group">
-            <label for="dpi">DPI</label>
-            <input type="text" name="dpi" class="form-control"  value="{{old('dpi', $patient->dpi)}}">
-        </div>
-        <div class="form-group">
             <label for="address">Direccion</label>
             <input type="text" name="address" class="form-control"  value="{{old('address', $patient->address)}}">
         </div>
