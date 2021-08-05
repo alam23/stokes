@@ -41,7 +41,7 @@
         </div>
         <div class="form-group">
             <label for="phone">Teléfono celular</label>
-            <input type="text" name="phone" class="form-control"  value="{{old('phone', $patient->phone)}}" required>
+            <input type="number" min="99999999"max="1000000000" name="phone" class="form-control"  value="{{old('phone', $patient->phone)}}" required>
         </div>
         
         <div class="form-group">
