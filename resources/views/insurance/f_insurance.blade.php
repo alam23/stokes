@@ -12,8 +12,8 @@
     
     <div class="card shadow border-dark mt-3">
     <div class="card-body ">
-        <p ><strong>USUARIO:</strong></br>{{auth()->user()->name}} </p>
-        <p ><strong>FAMILIAR:</strong></br>Esposa </p>
+        <p ><strong>USUARIO:</strong></br>Carlos Lozano </p>
+        <p ><strong>FAMILIAR:</strong></br>Esposo </p>
         <p ><strong>CÓDIGO DE SEGURO:</strong></br>00151268501 </p>
         <p><strong>TIPO DE SEGURO:</strong></br>Plan -> Cuidamos a toda tu familia</p>
         <p><strong>ESTADO DE PAGO DE SEGURO:</strong></br>Pagos al día</p>
@@ -23,7 +23,7 @@
     </div>
     <div class="card shadow border-dark mt-3">
     <div class="card-body ">
-        <p ><strong>USUARIO:</strong></br>{{auth()->user()->name}} </p>
+        <p ><strong>USUARIO:</strong></br>Juan Carlos Lozano</p>
         <p ><strong>FAMILIAR:</strong></br>Hijo </p>
         <p ><strong>CÓDIGO DE SEGURO:</strong></br>00151268502 </p>
         <p><strong>TIPO DE SEGURO:</strong></br>Plan -> Cuidamos a toda tu familia</p>
@@ -34,8 +34,8 @@
     </div>
     <div class="card shadow border-dark mt-3">
     <div class="card-body ">
-        <p ><strong>USUARIO:</strong></br>{{auth()->user()->name}} </p>
-        <p ><strong>FAMILIAR:</strong></br>Hija </p>
+        <p ><strong>USUARIO:</strong></br>Miguel Angel Lozano</p>
+        <p ><strong>FAMILIAR:</strong></br>Hijo </p>
         <p ><strong>CÓDIGO DE SEGURO:</strong></br>00151268503 </p>
         <p><strong>TIPO DE SEGURO:</strong></br>Plan -> Cuidamos a toda tu familia</p>
         <p><strong>ESTADO DE PAGO DE SEGURO:</strong></br>Pagos al día</p>
